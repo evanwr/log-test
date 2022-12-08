@@ -102,6 +102,7 @@ export function ProductForm() {
         <AddToCartButton
           variantId={selectedVariant?.id}
           quantity={1}
+	        attributes={[{key: 'Engraving', value: 'Hello world'}]}
           accessibleAddingToCartLabel="Adding item to your cart"
           disabled={isOutOfStock}
           type="button"
